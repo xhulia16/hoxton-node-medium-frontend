@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+header{
+  display: grid;
+  background-color: rgb(255,192,23);
+  height: 50px;
+  min-width: 100%;
+  border-bottom: 1px solid black;
+  font-size: 19px; 
+  align-content: center;
+  position: fixed;
+  top: 0;
+  
+}
+
+.home-ul{
+  margin-top: 70px;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+}
+
+.img-profile{
+  width: 20px;
+  height:20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.img-post{
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.author-details{
+  display: grid;
+  grid-auto-flow: column;
+  gap:10px;
+  place-items: center;
+  justify-content: left;
+}
+
+.details-container{
+  display: grid;
+}
+
+.details-container h4{
+  font-size: 22px;
+  text-align: left;
+}
+
+li{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 300px;
+}
