@@ -90,7 +90,7 @@ font-weight: 300;
 .post-details{
   display: grid;
   justify-items: center;
-  gap:30px;
+  gap:20px;
   line-height: 145%;
 }
 
@@ -103,4 +103,24 @@ object-fit: contain;
 a{
   text-decoration: none;
   color: black;
+}
+
+.likes-section{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+align-items: center;
+}
+
+.likes-section button{
+  border: none;
+  background: none;
+ font-size: 18px;
+ text-align: center;
+ width: 40px;
+ height:40px;
+}
+
+.likes-section button:active{
+  font-size: 20px;
 }
