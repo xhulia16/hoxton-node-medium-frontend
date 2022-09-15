@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,119 +8,142 @@
   text-align: center;
 }
 
-header{
+header {
   display: grid;
-  background-color: rgb(255,192,23);
+  background-color: rgb(255, 192, 23);
   height: 50px;
   min-width: 100%;
   border-bottom: 1px solid black;
-  font-size: 19px; 
+  font-size: 19px;
   align-content: center;
   position: fixed;
   top: 0;
-  
 }
 
-main{
+main {
   margin-top: 70px;
 }
 
-.home-ul{
+.home-ul {
   display: grid;
   gap: 30px;
   justify-content: center;
 }
 
-.img-profile{
+.img-profile {
   width: 20px;
-  height:20px;
+  height: 20px;
   object-fit: cover;
   border-radius: 50%;
 }
 
-.img-post{
+.img-post {
   width: 150px;
   height: 100px;
   object-fit: cover;
 }
 
-.author-details{
+.author-details {
   display: grid;
   grid-auto-flow: column;
-  gap:10px;
+  gap: 10px;
   place-items: center;
   justify-content: left;
 }
 
-.details-container{
+.details-container {
   display: grid;
 }
 
-.details-container h4{
+.details-container h4 {
   font-size: 22px;
   text-align: left;
 }
 
-li{
+.posts-container {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 0.5fr 0.5fr;
-  gap: 300px;
+  gap: 200px;
 }
 
-.author-details img{
-width: 50px;
-height: 50px;
-object-fit: cover;
-border-radius: 50%;
+.author-details img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.author-details h3{
-font-weight: 300;
-  }
+.author-details h3 {
+  font-weight: 300;
+}
 
-.single-post{
+.single-post {
   display: grid;
   justify-content: center;
   justify-items: center;
   margin: 10px 250px;
-  gap:20px;
+  gap: 20px;
 }
 
-.post-details{
+.post-details {
   display: grid;
   justify-items: center;
-  gap:20px;
+  gap: 20px;
   line-height: 145%;
 }
 
-.post-details img{
-width: 400px;
-height:400px;
-object-fit: contain;
+.post-details img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-.likes-section{
+.likes-section {
   display: grid;
   grid-auto-flow: column;
   gap: 10px;
-align-items: center;
+  align-items: center;
 }
 
-.likes-section button{
+.likes-section button {
   border: none;
   background: none;
- font-size: 18px;
- text-align: center;
- width: 40px;
- height:40px;
+  font-size: 18px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
 }
 
-.likes-section button:active{
+.likes-section button:active {
   font-size: 20px;
+}
+
+.comments-li {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+
+.comments-li img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.comment-h4 {
+  font-weight: 100;
+}
+
+.all-comments {
+  display: grid;
+  gap: 10px;
 }

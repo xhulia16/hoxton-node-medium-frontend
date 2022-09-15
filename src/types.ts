@@ -27,6 +27,6 @@ id: number
 comment: string
 postId:number
 userId: number
-user: User[]
+user: User
 }
 

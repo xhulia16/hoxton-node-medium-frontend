@@ -15,7 +15,7 @@ export function Home() {
     <ul className="home-ul">
        {posts.map(item=>(
         <Link to={`/home/${item.id}`}>
-        <li key={item.id}>
+        <li key={item.id} className="posts-container">
           <div className="details-container">
             <div className="author-details">
               <img className="img-profile" src={item.author.img}></img>
