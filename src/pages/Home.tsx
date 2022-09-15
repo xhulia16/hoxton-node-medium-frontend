@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Post } from "../types";
 
 export function Home() {
@@ -13,6 +14,7 @@ export function Home() {
   return(
     <ul className="home-ul">
        {posts.map(item=>(
+        <Link to={`/home/${item.id}`}>
         <li key={item.id}>
           <div className="details-container">
             <div className="author-details">
@@ -23,6 +25,7 @@ export function Home() {
           </div>
           <img className="img-post" src={item.image}></img>
         </li>
+        </Link>
        ))}
     </ul>
   )
