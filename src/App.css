@@ -87,11 +87,17 @@ font-weight: 300;
   gap:20px;
 }
 
-
 .post-details{
   display: grid;
+  justify-items: center;
   gap:30px;
   line-height: 145%;
+}
+
+.post-details img{
+width: 400px;
+height:400px;
+object-fit: contain;
 }
 
 a{
